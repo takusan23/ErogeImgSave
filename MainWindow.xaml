@@ -1,0 +1,19 @@
+﻿<Window x:Class="ErogeImgSave.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ErogeImgSave" xmlns:tb="http://www.hardcodet.net/taskbar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="200">
+
+    <tb:TaskbarIcon x:Name="ErogeImgSaveTaskbarIcon" ToolTipText="クリップボードを監視して画像があれば保存する" IconSource="Resources/ErogeImgSaveIcon.ico">
+        <tb:TaskbarIcon.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="保存先を開く" Click="MenuItemShowSaveFolder"/>
+                <MenuItem Header="終了" Click="MenuItemClickExit" />
+            </ContextMenu>
+        </tb:TaskbarIcon.ContextMenu>
+    </tb:TaskbarIcon>
+
+</Window>
